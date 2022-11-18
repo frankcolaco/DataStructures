@@ -1,5 +1,5 @@
 # DataStructures
-This Repository will have programs to understand Data structures in java
+This Repository will have programs to understand Data structures in java with notes.
 
 1. **Stack**:
    Stack is a LIFO Data structure
