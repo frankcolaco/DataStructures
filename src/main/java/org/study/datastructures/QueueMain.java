@@ -1,6 +1,8 @@
 package org.study.datastructures;
 
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
@@ -26,5 +28,17 @@ public class QueueMain {
         System.out.println(queue);
         System.out.println(queue.isEmpty());
         System.out.println(queue.contains("Frank"));
+        System.out.println("-----------------------------------------------------------------------------------");
+       // Queue<Double> studentGPA = new PriorityQueue<>(); // ascending order
+        Queue<Double> studentGPA = new PriorityQueue<>(Collections.reverseOrder()); // descending order
+        studentGPA.offer(2.0);
+        studentGPA.offer(1.5);
+        studentGPA.offer(3.0);
+        studentGPA.offer(2.5);
+        studentGPA.offer(4.0);
+        studentGPA.offer(1.0);
+
+        while(!studentGPA.isEmpty())
+            System.out.println(studentGPA.poll());
     }
 }
